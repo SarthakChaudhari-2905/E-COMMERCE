@@ -1,0 +1,113 @@
+/* Header */
+.header {
+  width: 100%;
+  padding: 0rem 5rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1100px;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #111827;
+  font-weight: 500;
+  position: relative;
+  padding: 0.3rem 0.6rem;
+  transition: 0.3s;
+}
+
+.nav ul li a:hover {
+  color: #ef4444; /* red hover */
+}
+
+.nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #ef4444;
+  transition: width 0.3s;
+}
+
+.nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Categories */
+.categories a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  position: relative;
+}
+
+.categories a:hover {
+  color: #2563eb; /* blue hover */
+}
+
+.categories a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #2563eb;
+  transition: width 0.3s;
+}
+
+.categories a:hover::after {
+  width: 100%;
+}
+
+/* Brand Section */
+.brand-section {
+  text-align: center;
+  margin: 6rem 0 2rem 0;  /* ⬅ increased top margin */
+}
+
+
+.brand-name {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.brand-tagline {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+/* Add to Home.css or existing file */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+.home-main { padding: 2rem; }
+.home-header { text-align: left; margin-bottom: 1rem; }
+.home-title { font-size: 28px; letter-spacing: 1px; }
+.home-subtitle { color: #6b7280; margin-top: 6px; }

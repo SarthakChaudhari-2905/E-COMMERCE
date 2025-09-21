@@ -1,0 +1,154 @@
+/* Header - solid, non-transparent and fixed on top */
+.header {
+  position: fixed;           /* use fixed to avoid sticky/ancestor issues */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  background-color: #ffffff !important;   /* force solid white */
+  border-bottom: 1px solid #e6e6e6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  z-index: 9999;
+  transition: background-color .18s ease, box-shadow .18s ease, opacity .18s ease;
+  opacity: 1 !important;                  /* override any fading */
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  will-change: transform;
+}
+
+/* Logo */
+.logo h2 {
+  font-size: 1.6rem;   /* reduced */
+  font-weight: 800;
+  color: #e60023;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: 0;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1100px;
+    align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.95rem;   /* smaller font */
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #000;
+  border-bottom: 2px solid #e60023;
+  padding-bottom: 2px;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.icon {
+  font-size: 1.1rem;  /* smaller icons */
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: #e60023;
+}
+
+/* Logo duplicate */
+.logo h2 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #e60023;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin: 0;
+    margin-left: -15rem;
+}
+
+/* Navigation duplicate */
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1100px;
+    align-items: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.95rem;   /* smaller font */
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #000;
+  border-bottom: 2px solid #e60023;
+  padding-bottom: 2px;
+}
+
+/* Icons duplicate */
+.icons {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.icon {
+  font-size: 1.1rem;  /* smaller icons */
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: #e60023;
+}
+
+/* Cart Icon Badge */
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #e60023;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: transparent !important;
+    color: black !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+
+.logout-btn:hover {
+    color: #000 !important;
+    border-bottom: 2px solid #e60023 !important;
+    padding-bottom: 2px !important;
+}

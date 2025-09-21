@@ -1,0 +1,113 @@
+.about-footer {
+  background: #fff;
+  padding: 7rem 2rem;
+  border-top: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+.footer-sections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.footer-column ul li:hover {
+  text-decoration: underline;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: black;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.footer-bottom a {
+  color: black;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
+
+/* ------------------------- */
+/* 📱 Responsive Styling */
+/* ------------------------- */
+@media (max-width: 1024px) {
+  .footer-sections {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-sections {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-column h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 0.4rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .footer-socials {
+    font-size: 1.3rem;
+    gap: 1rem;
+  }
+}
